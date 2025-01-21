@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion des produits d'un store</title>
+</head>
+
+<body>
+    <h1>Gestion des produits d'un store</h1>
+
+    <button id="addBtn">Ajouter</button>
+
+    <form id="productForm" style="display: none;">
+        <label for="productCode">Code produit:</label>
+        <input type="number" id="productCode" required><br>
+
+        <label for="productTitle">Titre:</label>
+        <input type="text" id="productTitle" required><br>
+
+        <label for="productDescription">Description:</label>
+        <textarea id="productDescription" required></textarea><br>
+
+        <label for="productPrice">Prix:</label>
+        <input type="number" id="productPrice" required><br>
+
+        <label for="productCategory">Catégorie:</label>
+        <input type="text" id="productCategory" required><br>
+
+
+        <button type="button" id="saveBtn">Sauvegarder</button>
+        <button type="button" id="cancelBtn">Annuler</button>
+        <button type="button" id="resetBtn">Vider</button>
+    </form>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Code produit</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Prix</th>
+                <th>Catégorie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- les produits -->
+        </tbody>
+    </table>
+
+    <button id="deleteBtn">Supprimer</button>
+
+</body>
+
+</html>
